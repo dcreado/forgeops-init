@@ -1,0 +1,47 @@
+{
+  "metadata" : {
+    "realm" : "/mx",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "OpenIDConnect",
+    "entityId" : "a3787e05-6cd2-4f88-abe6-288531a5ed46",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "a3787e05-6cd2-4f88-abe6-288531a5ed46",
+    "redirectURI" : "https://login.development.example.com/XUI?realm=/mx",
+    "authenticationIdKey" : "sub",
+    "openIdValidationMethod" : "WELL_KNOWN_URL",
+    "clientId" : "fr-stack",
+    "basicAuth" : true,
+    "cfgAccountProviderClass" : "org.forgerock.openam.authentication.modules.common.mapping.DefaultAccountProvider",
+    "scopeString" : "openid profile",
+    "cfgAccountMapperConfiguration" : {
+      "sub" : "iplanet-am-user-alias-list"
+    },
+    "cfgAttributeMappingClasses" : [ "org.forgerock.openam.authentication.modules.oidc.JwtAttributeMapper|iplanet-am-user-alias-list|openid-" ],
+    "issuer" : "http://example-idp.ddns.net:8080/sso/oauth2",
+    "tokenEndpoint" : "http://example-idp.ddns.net:8080/sso/oauth2/access_token",
+    "cfgAttributeMappingConfiguration" : {
+      "sub" : "iplanet-am-user-alias-list",
+      "givenName" : "given_name",
+      "name" : "name",
+      "groups" : "groups",
+      "family_name" : "sn",
+      "email" : "email"
+    },
+    "provider" : "openam-",
+    "cfgMixUpMitigation" : false,
+    "authorizeEndpoint" : "http://example-idp.ddns.net:8080/sso/oauth2/authorize",
+    "clientSecret" : null,
+    "clientSecret-encrypted" : "AAAAA0FFUwIQqccRaDntPAd+L7p11kqHgJlUpwM3fi7ftbZL+Va+zok=",
+    "cfgAccountMapperClass" : "org.forgerock.openam.authentication.modules.oidc.JwtAttributeMapper|*|openid-",
+    "userInfoEndpoint" : "http://example-idp.ddns.net:8080/sso/oauth2/userinfo",
+    "openIdValidationValue" : "http://example-idp.ddns.net:8080/sso/oauth2/.well-known/openid-configuration",
+    "saveUserAttributesToSession" : true,
+    "_type" : {
+      "_id" : "SocialOpenIdConnectNode",
+      "name" : "OpenID Connect",
+      "collection" : true
+    }
+  }
+}

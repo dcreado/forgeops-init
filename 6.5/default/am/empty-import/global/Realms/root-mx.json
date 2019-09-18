@@ -1,0 +1,16 @@
+{
+  "metadata" : {
+    "realm" : null,
+    "amsterVersion" : "6.5.2",
+    "entityType" : "Realms",
+    "entityId" : "L214",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "L214",
+    "parentPath" : "/",
+    "active" : true,
+    "name" : "mx",
+    "aliases" : [ "mx.development.example.com" ]
+  }
+}

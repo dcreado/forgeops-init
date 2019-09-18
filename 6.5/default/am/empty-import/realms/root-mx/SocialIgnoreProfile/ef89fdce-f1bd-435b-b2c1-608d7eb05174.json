@@ -1,0 +1,17 @@
+{
+  "metadata" : {
+    "realm" : "/mx",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "SocialIgnoreProfile",
+    "entityId" : "ef89fdce-f1bd-435b-b2c1-608d7eb05174",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "ef89fdce-f1bd-435b-b2c1-608d7eb05174",
+    "_type" : {
+      "_id" : "SocialOAuthIgnoreProfileNode",
+      "name" : "Social Ignore Profile",
+      "collection" : true
+    }
+  }
+}

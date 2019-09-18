@@ -1,0 +1,30 @@
+{
+  "metadata" : {
+    "realm" : "/mx",
+    "amsterVersion" : "6.5.2",
+    "entityType" : "AuthTree",
+    "entityId" : "staff-login",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "staff-login",
+    "nodes" : {
+      "ef89fdce-f1bd-435b-b2c1-608d7eb05174" : {
+        "displayName" : "Social Ignore Profile",
+        "nodeType" : "SocialOAuthIgnoreProfileNode",
+        "connections" : {
+          "outcome" : "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+        }
+      },
+      "a3787e05-6cd2-4f88-abe6-288531a5ed46" : {
+        "displayName" : "idp",
+        "nodeType" : "SocialOpenIdConnectNode",
+        "connections" : {
+          "ACCOUNT_EXISTS" : "ef89fdce-f1bd-435b-b2c1-608d7eb05174",
+          "NO_ACCOUNT" : "ef89fdce-f1bd-435b-b2c1-608d7eb05174"
+        }
+      }
+    },
+    "entryNodeId" : "a3787e05-6cd2-4f88-abe6-288531a5ed46"
+  }
+}
